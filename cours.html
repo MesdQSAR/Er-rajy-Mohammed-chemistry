@@ -1,101 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Cours de Chimie</title>
-<style>
-body{font-family:Arial;margin:0;background:#f4f6f9}
-header{background:#2a5298;color:white;text-align:center;padding:30px}
-nav{background:#0f172a;text-align:center;padding:10px}
-nav a{color:white;margin:10px;text-decoration:none}
-.container{padding:20px}
-.card{background:white;padding:15px;margin:10px;border-radius:10px}
-</style>
+    <meta charset="UTF-8">
+    <title>Portail de Chimie Académique</title>
+    <style>
+        body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; background:#f4f6f9; color:#333;}
+        header{background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color:white; text-align:center; padding:40px 20px;}
+        nav{background:#0f172a; text-align:center; padding:15px; position: sticky; top: 0; z-index: 1000;}
+        nav a{color:white; margin:0 15px; text-decoration:none; font-weight: bold; transition: color 0.3s;}
+        nav a:hover{color:#3b82f6;}
+        .container{max-width: 1000px; margin: auto; padding:20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;}
+        .card{background:white; padding:20px; border-radius:12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;}
+        .card:hover{transform: translateY(-5px);}
+        h2{color:#1e3c72; border-bottom: 2px solid #eee; padding-bottom: 10px;}
+        .btn-pdf{display:inline-block; padding:10px 20px; background:#1e3c72; color:white; text-decoration:none; border-radius:8px; font-weight:bold; margin-top: 10px;}
+        .btn-pdf:hover{background:#2a5298;}
+        .tag{display:inline-block; background:#e2e8f0; padding:2px 8px; border-radius:4px; font-size: 0.8em; margin-right: 5px; color: #475569;}
+    </style>
 </head>
-
 <body>
 
 <header>
-<h1>📚 Cours de Chimie</h1>
+    <h1>📚 Ressources de Chimie & Modélisation</h1>
+    <p>Supports de cours pour étudiants et chercheurs</p>
 </header>
 
 <nav>
-<a href="index.html">Accueil</a>
-<a href="cours.html">Cours</a>
-<a href="exercices.html">Exercices</a>
-<a href="contact.html">Contact</a>
+    <a href="#generale">Générale</a>
+    <a href="#organique">Organique</a>
+    <a href="#avancee">Numérique</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
 
-<div class="card">
-<h2>Chimie générale</h2>
-<p>Atome, molécules, réactions chimiques.</p>
-</div>
+    <div class="card" id="generale">
+        <h2>📘 Chimie en solution</h2>
+        <p>Étude des équilibres acido-basiques, complexation et précipitation.</p>
+        <a href="Chimie_en_solution.pdf" class="btn-pdf">📥 Télécharger PDF</a>
+    </div>
 
-<div class="card">
-<h2>Chimie organique</h2>
-<p>Fonctions organiques et mécanismes réactionnels.</p>
-</div>
+    <div class="card" id="organique">
+        <h2>📙 Chimie Organique</h2>
+        <p>Réactivité, mécanismes réactionnels et stéréochimie.</p>
+        <a href="Chimie_Organique.pdf" class="btn-pdf">📥 Télécharger PDF</a>
+    </div>
 
-<div class="card">
-<h2>Chimie physique</h2>
-<p>Thermodynamique, cinétique, équilibre.</p>
-</div>
-
-<div class="card">
-<h2>Chimie avancée</h2>
-<p>DFT, docking moléculaire, QSAR.</p>
-</div>
+    <div class="card" id="avancee">
+        <h2>🔬 Chimie Computationnelle</h2>
+        <p>Introduction à la modélisation moléculaire et au design de médicaments.</p>
+        <div>
+            <span class="tag">DFT</span>
+            <span class="tag">Docking</span>
+            <span class="tag">QSAR</span>
+        </div>
+        <a href="Cours_Chimie_Numerique.pdf" class="btn-pdf" style="background:#059669;">📥 Accéder au module</a>
+    </div>
 
 </div>
 
 </body>
 </html>
-
-<div class="card">
-
-<h2>📘 Chimie en solution</h2>
-
-<p>Télécharger le cours en PDF :</p>
-
-<a href="Chimie_en_solution.pdf" target="_blank"
-style="
-display:inline-block;
-padding:10px 15px;
-background:#1e3c72;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;">
-📥 Ouvrir le PDF
-</a>
-
-</div>
-
-
-</body>
-</html>
-
-<div class="card">
-
-<h2>📘 Chimie organique</h2>
-
-<p>Télécharger le cours en PDF :</p>
-
-<a href="Chimie_en_solution.pdf" target="_blank"
-style="
-display:inline-block;
-padding:10px 15px;
-background:#1e3c72;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;">
-📥 Ouvrir le PDF
-</a>
-
-</div>
-
-
-Chimie_en_solution.pdf
